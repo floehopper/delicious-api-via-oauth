@@ -1,7 +1,3 @@
-require 'oauth-extensions/yahoo/consumer'
-require 'oauth-extensions/yahoo/request_token'
-require 'oauth-extensions/delicious/access_token'
-
 module Delicious
   
   class API

@@ -1,7 +1,3 @@
-require 'oauth'
-
-require 'oauth-extensions/yahoo/consumer'
-
 module OAuth
   
   module Delicious

@@ -1,5 +1,3 @@
-require 'oauth-extensions/delicious/consumer'
-
 module OAuth
   
   module Delicious

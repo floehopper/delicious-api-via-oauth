@@ -1,7 +1,5 @@
-$LOAD_PATH << File.join(File.dirname(__FILE__), 'oauth-extensions')
-$LOAD_PATH << File.join(File.dirname(__FILE__), 'delicious')
-
-require 'delicious/api'
+require 'rubygems'
+require 'delicious-api-via-oauth'
 require 'constants'
 
 api = Delicious::API.new(API_KEY, SHARED_SECRET)

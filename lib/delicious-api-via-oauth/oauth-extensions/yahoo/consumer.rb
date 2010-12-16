@@ -1,7 +1,3 @@
-require 'oauth'
-
-require 'oauth-extensions/yahoo/request_token'
-
 module OAuth
   
   module Yahoo
