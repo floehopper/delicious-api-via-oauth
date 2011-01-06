@@ -9,6 +9,7 @@ module Delicious
     attr_accessor :meta
     attr_accessor :hash
     attr_accessor :others
+    attr_accessor :shared
 
     def initialize(attrs)
       @url = attrs[:url]
@@ -19,6 +20,7 @@ module Delicious
       @meta = attrs[:meta]
       @hash = attrs[:hash]
       @others = attrs[:others]
+      @shared = attrs[:shared]
     end
 
     def self.import_from_xml(xml)
@@ -33,7 +35,8 @@ module Delicious
           :date => Time.parse(post['time']),
           :meta => post['meta'],
           :hash => post['hash'],
-          :others => post['others']
+          :others => post['others'],
+          :shared => post['shared']
         )
       end
     end
