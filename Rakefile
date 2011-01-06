@@ -15,7 +15,7 @@ spec = Gem::Specification.new do |s|
 
   # Change these as appropriate
   s.name              = "delicious-api-via-oauth"
-  s.version           = "0.1.1"
+  s.version           = "0.1.3"
   s.summary           = "Ruby wrapper for the Delicious v2 API using the OAuth gem"
   s.author            = "James Mead"
   s.email             = "james@floehopper.org"
