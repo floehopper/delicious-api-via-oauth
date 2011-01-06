@@ -15,7 +15,7 @@ spec = Gem::Specification.new do |s|
 
   # Change these as appropriate
   s.name              = "delicious-api-via-oauth"
-  s.version           = "0.1.0"
+  s.version           = "0.1.1"
   s.summary           = "Ruby wrapper for the Delicious v2 API using the OAuth gem"
   s.author            = "James Mead"
   s.email             = "james@floehopper.org"
@@ -71,4 +71,11 @@ end
 desc 'Clear out RDoc and generated packages'
 task :clean => [:clobber_rdoc, :clobber_package] do
   rm "#{spec.name}.gemspec"
+end
+
+require 'rake/testtask'
+Rake::TestTask.new(:test) do |test|
+  test.libs << 'lib' << 'test'
+  test.pattern = 'test/**/test_*.rb'
+  test.verbose = true
 end
