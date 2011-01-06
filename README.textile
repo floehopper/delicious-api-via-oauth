@@ -1,1 +1,5 @@
 See "this blog post":http://blog.floehopper.org/articles/2010/01/14/ruby-wrapper-for-the-delicious-v2-api-using-the-oauth-gem for an explanation.
+
+CHANGES
+
+- Added the rest of the 'post' methods to the gem.
