@@ -17,8 +17,8 @@ spec = Gem::Specification.new do |s|
   s.name              = "delicious-api-via-oauth"
   s.version           = "0.1.3"
   s.summary           = "Ruby wrapper for the Delicious v2 API using the OAuth gem"
-  s.author            = "James Mead"
-  s.email             = "james@floehopper.org"
+  s.authors           = ["James Mead", "Chris Blackburn"]
+  s.email             = ["james@floehopper.org", "chris@midwiretech.com"]
   s.homepage          = "http://jamesmead.org/blog/2010-01-14-ruby-wrapper-for-the-delicious-v2-api-using-the-oauth-gem"
 
   s.has_rdoc          = true
@@ -32,6 +32,7 @@ spec = Gem::Specification.new do |s|
   # If you want to depend on other gems, add them here, along with any
   # relevant versions
   s.add_dependency("oauth")
+  s.add_dependency("nokogiri")
 
   # If your tests use any gems, include them here
   # s.add_development_dependency("mocha") # for example

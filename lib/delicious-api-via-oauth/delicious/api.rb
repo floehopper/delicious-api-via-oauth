@@ -66,7 +66,7 @@ module Delicious
         :url => post_object.url, 
         :description => post_object.description,
         :extended => post_object.extended,
-        :tags => post_object.tags,
+        :tags => post_object.tags.is_a?(Array) ? post_object.tags.join(" ") : post_object.tags,
         :dt => post_object.date,
         :replace => 'yes',
         :shared => post_object.shared
